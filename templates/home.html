@@ -1,0 +1,139 @@
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+   <body>
+      <title>Customer  Prediction</title>
+	  <div class="container">
+		<div class="row">
+
+		  <form action="http://localhost:5000/" method="POST">
+		  	<div class="col-sm-9">
+			 <div class="form-group  purple-border">
+				  <label for="comment">Nationality:</label>
+				  <textarea class="form-control" rows="2" id="query1" name="query1" rows="2" cols="5" autofocus>{{query1}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">Age:</label>
+				  <textarea class="form-control" rows="2" id="query2" name="query2" rows="2" cols="5" autofocus>{{query2}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">DaysSinceCreation:</label>
+				  <textarea class="form-control" rows="2" id="query3" name="query3" rows="2" cols="5" autofocus>{{query3}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">AverageLeadTime:</label>
+				  <textarea class="form-control" rows="2" id="query4" name="query4" rows="2" cols="5" autofocus>{{query4}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">LodgingRevenue:</label>
+				  <textarea class="form-control" rows="2" id="query5" name="query5" rows="2" cols="5" autofocus>{{query5}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">OtherRevenue:</label>
+				  <textarea class="form-control" rows="2" id="query6" name="query6" rows="2" cols="5" autofocus>{{query6}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">BookingsCanceled:</label>
+				  <textarea class="form-control" rows="2" id="query7" name="query7" rows="2" cols="5" autofocus>{{query7}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">BookingsNoShowed:</label>
+				  <textarea class="form-control" rows="2" id="query8" name="query8" rows="2" cols="5" autofocus>{{query8}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">PersonsNights:</label>
+				  <textarea class="form-control" rows="2" id="query9" name="query9" rows="2" cols="5" autofocus>{{query9}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">RoomNights:</label>
+				  <textarea class="form-control" rows="2" id="query10" name="query10" rows="2" cols="5" autofocus>{{query10}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">DaysSinceLastStay:</label>
+				  <textarea class="form-control" rows="2" id="query11" name="query11" rows="2" cols="5" autofocus>{{query11}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">DaysSinceFirstStay:</label>
+				  <textarea class="form-control" rows="2" id="query12" name="query12" rows="2" cols="5" autofocus>{{query12}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">DistributionChannel:</label>
+				  <textarea class="form-control" rows="2" id="query13" name="query13" rows="2" cols="5" autofocus>{{query13}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">MarketSegment:</label>
+				  <textarea class="form-control" rows="2" id="query14" name="query14" rows="2" cols="5" autofocus>{{query14}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRHighFloor:</label>
+				  <textarea class="form-control" rows="2" id="query15" name="query15" rows="2" cols="5" autofocus>{{query15}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRLowFloor:</label>
+				  <textarea class="form-control" rows="2" id="query16" name="query16" rows="2" cols="5" autofocus>{{query16}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRAccessibleRoom:</label>
+				  <textarea class="form-control" rows="2" id="query17" name="query17" rows="2" cols="5" autofocus>{{query17}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRMediumFloor:</label>
+				  <textarea class="form-control" rows="2" id="query18" name="query18" rows="2" cols="5" autofocus>{{query18}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRBathtub:</label>
+				  <textarea class="form-control" rows="2" id="query19" name="query19" rows="2" cols="5" autofocus>{{query19}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRShower:</label>
+				  <textarea class="form-control" rows="2" id="query20" name="query20" rows="2" cols="5" autofocus>{{query20}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRCrib:</label>
+				  <textarea class="form-control" rows="2" id="query21" name="query21" rows="2" cols="5" autofocus>{{query21}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRKingSizeBed:</label>
+				  <textarea class="form-control" rows="2" id="query22" name="query22" rows="2" cols="5" autofocus>{{query22}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRTwinBed:</label>
+				  <textarea class="form-control" rows="2" id="query23" name="query23" rows="2" cols="5" autofocus>{{query23}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRNearElevator:</label>
+				  <textarea class="form-control" rows="2" id="query24" name="query24" rows="2" cols="5" autofocus>{{query24}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRAwayFromElevator:</label>
+				  <textarea class="form-control" rows="2" id="query25" name="query25" rows="2" cols="5" autofocus>{{query25}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRNoAlcoholInMiniBar:</label>
+				  <textarea class="form-control" rows="2" id="query26" name="query26" rows="2" cols="5" autofocus>{{query26}}</textarea>
+			</div>
+			<div class="form-group  purple-border">
+				  <label for="comment">SRQuietRoom:</label>
+				  <textarea class="form-control" rows="2" id="query27" name="query27" rows="2" cols="5" autofocus>{{query27}}</textarea>
+			</div>
+			
+			</div>
+			<div class="col-sm-3">
+			<button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
+			</div>
+		  </form>
+		  </div>
+		  
+		<div class="row"> 
+			<div class="col-sm-9">
+			<textarea class="form-control" rows="2" id="comment" name="query28" rows="2" cols="5" autofocus>{{output1}}</textarea>
+			<textarea class="form-control" rows="2" id="comment" name="query29" rows="2" cols="5" autofocus>{{output2}}</textarea>
+			</div>
+		</div>
+	</div>		
+   </body>
+</html>
